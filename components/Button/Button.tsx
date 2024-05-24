@@ -7,6 +7,7 @@ interface ButtonProps {
   className?: string;
   backgroundColor?: string;
   fontSize?: string;
+  fontFamily?: string;
   color?: string;
   borderRadius?: string;
   width?: string;
@@ -19,6 +20,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   className,
   backgroundColor, // Sử dụng biến CSS --bg-button cho màu nền
   fontSize,
+  fontFamily,
   color,
   borderRadius,
   width,
@@ -32,6 +34,7 @@ const CustomButton: React.FC<ButtonProps> = ({
     gap: "10px",
     backgroundColor,
     fontSize,
+    fontFamily,
     color,
     borderRadius,
     width,

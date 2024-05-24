@@ -3,11 +3,10 @@
 import { KeyboardArrowDown } from "@mui/icons-material";
 import {
   Box,
-  createTheme,
   Divider,
   Menu,
   MenuItem,
-  ThemeProvider,
+  Stack,
   Tooltip,
   Typography,
 } from "@mui/material";
@@ -29,14 +28,20 @@ export default function Navigation() {
 
   return (
     <React.Fragment>
-      <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
-        <Typography sx={{ minWidth: 100 }}>
-          <Link className="nav_restaurant__link" href="">
+      <div className="header-wrapper_nav">
+        <Box sx={{ minWidth: 120 }}>
+          <Link
+            className="nav_restaurant__link"
+            href=""
+            style={{
+              fontFamily: "Poppins, sans-serif",
+            }}
+          >
             Home
           </Link>
-        </Typography>
+        </Box>
         <Tooltip title="">
-          <Typography sx={{ minWidth: 100 }}>
+          <Box sx={{ minWidth: 120 }}>
             <Link
               className="nav_restaurant__link"
               href=""
@@ -46,13 +51,29 @@ export default function Navigation() {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
             >
-              <span style={{ color: "black" }}>Services</span>
+              <span style={{ color: "black" }}>
+                <Stack
+                  direction={"row"}
+                  textAlign={"center"}
+                  alignItems={"center"}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  Services
+                  <KeyboardArrowDown
+                    sx={{
+                      fontSize: 16,
+                    }}
+                  />
+                </Stack>
+              </span>
             </Link>
-          </Typography>
+          </Box>
         </Tooltip>
 
         <Tooltip title="">
-          <Typography sx={{ minWidth: 150 }}>
+          <Box sx={{ minWidth: 110 }}>
             <Link
               className="nav_restaurant__link"
               href=""
@@ -62,25 +83,53 @@ export default function Navigation() {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
             >
-              <span style={{ color: "black" }}>Expertise</span>
+              <span style={{ color: "black" }}>
+                <Stack
+                  direction={"row"}
+                  textAlign={"center"}
+                  alignItems={"center"}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  Expertise
+                  <KeyboardArrowDown
+                    sx={{
+                      fontSize: 16,
+                    }}
+                  />
+                </Stack>
+              </span>
             </Link>
-          </Typography>
+          </Box>
         </Tooltip>
 
-        <Typography sx={{ minWidth: 58 }}>
-          <Link className="nav_restaurant__link" href="">
+        <Box sx={{ minWidth: 60 }}>
+          <Link
+            className="nav_restaurant__link"
+            href=""
+            style={{
+              fontFamily: "Poppins, sans-serif",
+            }}
+          >
             Case
           </Link>
-        </Typography>
+        </Box>
 
-        <Typography sx={{ minWidth: 108 }}>
-          <Link className="nav_restaurant__link" href="">
+        <Box sx={{ minWidth: 98 }}>
+          <Link
+            className="nav_restaurant__link"
+            href=""
+            style={{
+              fontFamily: "Poppins, sans-serif",
+            }}
+          >
             Pricing
           </Link>
-        </Typography>
+        </Box>
 
         <Tooltip title="">
-          <Typography sx={{ minWidth: 116 }}>
+          <Box sx={{ minWidth: 120 }}>
             <Link
               className="nav_restaurant__link"
               href=""
@@ -90,11 +139,30 @@ export default function Navigation() {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
             >
-              <span style={{ color: "black" }}>Company</span>
+              <span
+                style={{ color: "black", fontFamily: "Poppins, sans-serif" }}
+              >
+                <Stack
+                  direction={"row"}
+                  textAlign={"center"}
+                  alignItems={"center"}
+                  style={{
+                    marginLeft: "15px",
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  Company
+                  <KeyboardArrowDown
+                    sx={{
+                      fontSize: 16,
+                    }}
+                  />
+                </Stack>
+              </span>
             </Link>
-          </Typography>
+          </Box>
         </Tooltip>
-      </Box>
+      </div>
 
       {/* Menu Services */}
       <Menu
@@ -103,14 +171,6 @@ export default function Navigation() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: "visible",
-            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32)",
-            mt: 1.5,
-          },
-        }}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
@@ -132,14 +192,6 @@ export default function Navigation() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: "visible",
-            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32)",
-            mt: 1.5,
-          },
-        }}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
@@ -161,13 +213,6 @@ export default function Navigation() {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: "visible",
-            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32)",
-          },
-        }}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
