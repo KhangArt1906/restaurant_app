@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.heading_feature {
+  color: #1f2326;
+  text-align: center;
+  /* H4 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.subheading_feature {
+  color: var(--dark-1, #81879d);
+  margin-top: 16px;
+  text-align: center;
+  /* Body 2 */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 222px;
+  height: 42px;
+}

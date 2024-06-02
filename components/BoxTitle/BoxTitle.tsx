@@ -3,7 +3,7 @@ import { GradientText } from "react-gradient-text";
 import { Box, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 
-const BoxTitle = ({ title, desc, align = "center", children }) => {
+const BoxTitle = ({ title, desc, align = "center", descStyle }) => {
   return (
     <Box display="flex" flexDirection="column" gap={3} alignItems="center">
       <Typography
@@ -17,12 +17,11 @@ const BoxTitle = ({ title, desc, align = "center", children }) => {
         {title}
       </Typography>
 
-      <Box margin={align ? "0 auto" : ""}>{children}</Box>
-
       <Typography
         variant="body1"
         sx={{
           textAlign: align,
+          ...(descStyle || {}),
         }}
         component="div"
       >
@@ -36,7 +35,7 @@ BoxTitle.propTypes = {
   title: PropTypes.node.isRequired,
   desc: PropTypes.string.isRequired,
   align: PropTypes.string,
-  children: PropTypes.node,
+  descStyle: PropTypes.object,
 };
 
 export default BoxTitle;

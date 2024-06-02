@@ -10,11 +10,13 @@ declare module "@mui/material/styles" {
     black: string;
     textTitle: string;
     blackGray: string;
+    backgrounBtn: string;
   }
   interface PaletteOptions {
     black?: string;
     textTitle?: string;
     blackGray?: string;
+    backgroundBtn?: string;
   }
 
   interface Theme {
@@ -75,6 +77,8 @@ const themeOptions: ThemeOptions = {
     black: "#1F2326",
     textTitle: "linear-gradient(90deg, #F961D8 36.52%, #1663F9 63.78%)",
     blackGray: "#404040",
+    backgroundBtn:
+      "linear-gradient(90deg, #B0B0B0 0%, #636363 8.85%, #C2C2C2 17.71%, #C2C2C2 75%, #EFEEEE 86.46%, #6C6C6C 100%)",
   },
   custom: {
     shadows: {

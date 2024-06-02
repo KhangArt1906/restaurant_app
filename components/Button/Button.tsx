@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 interface ButtonProps {
   onClick: () => void;
   className?: string;
+  background?: string;
   backgroundColor?: string;
   fontSize?: string;
   fontFamily?: string;
@@ -18,7 +19,8 @@ interface ButtonProps {
 const CustomButton: React.FC<ButtonProps> = ({
   onClick,
   className,
-  backgroundColor, // Sử dụng biến CSS --bg-button cho màu nền
+  backgroundColor,
+  background,
   fontSize,
   fontFamily,
   color,
@@ -33,6 +35,7 @@ const CustomButton: React.FC<ButtonProps> = ({
     alignItems: "center",
     gap: "10px",
     backgroundColor,
+    background,
     fontSize,
     fontFamily,
     color,
