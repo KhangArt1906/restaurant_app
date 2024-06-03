@@ -4,7 +4,7 @@ import BoxTitle from "../BoxTitle/BoxTitle";
 import { styled } from "@mui/material/styles";
 import theme from "../../theme";
 import Paper from "@mui/material/Paper";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Container, Divider, Grid, Stack } from "@mui/material";
 import Image from "next/image";
 
 export const Feature = () => {
@@ -15,14 +15,13 @@ export const Feature = () => {
     textAlign: "center",
     color: theme.palette.text.secondary,
     width: "375px",
-    height: "300px",
-    overflow: "hidden",
+    height: "330px",
     borderRadius: "14px",
     boxShadow: "0px 10px 70px -10px rgba(7, 7, 7, 0.07)",
   }));
 
   return (
-    <React.Fragment>
+    <div className="feature_wrapper">
       <Box>
         <BoxTitle
           title={
@@ -69,7 +68,7 @@ export const Feature = () => {
           justifyItems: "center",
           alignItems: "center",
           marginTop: "46px",
-          transform: "translateX(2%)",
+          transform: "translateX(1%)",
           overflowY: "hidden",
           maxWidth: "1200px",
         }}
@@ -78,8 +77,8 @@ export const Feature = () => {
           <Item>
             <Image
               src="/src/assets/sausage_fried.png"
-              width={260}
-              height={150}
+              width={360}
+              height={180}
               alt="Sausage Fried"
             />
             <Stack
@@ -113,8 +112,8 @@ export const Feature = () => {
           <Item>
             <Image
               src="/src/assets/chicken_sweler.png"
-              width={260}
-              height={150}
+              width={360}
+              height={180}
               alt="Sausage Fried"
             />
             <Stack
@@ -148,8 +147,8 @@ export const Feature = () => {
           <Item>
             <Image
               src="/src/assets/pasta_tomato.png"
-              width={260}
-              height={150}
+              width={360}
+              height={180}
               alt="Sausage Fried"
             />
             <Stack
@@ -180,6 +179,93 @@ export const Feature = () => {
           </Item>
         </Grid>
       </Grid>
-    </React.Fragment>
+
+      {/* Box Background - Divisores */}
+      <Container
+        sx={{
+          background: "linear-gradient(243deg, #9A40E4 7.82%, #5C70F4 74.31%);",
+          width: "1200px",
+          padding: "70px 260px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "100px",
+          gap: "10px",
+          overflow: "hidden",
+        }}
+      >
+        <Stack
+          direction="row"
+          divider={
+            <Divider
+              orientation="vertical"
+              flexItem
+              sx={{
+                background: "#7981FD",
+                width: "1.1px",
+                height: "108px",
+              }}
+            />
+          }
+          spacing={10}
+        >
+          <Box>
+            <h2
+              className="heading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontSora,
+              }}
+            >
+              +20k
+            </h2>
+            <p
+              className="subheading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontPoppins,
+              }}
+            >
+              Trusted Retails
+            </p>
+          </Box>
+          <Box>
+            <h2
+              className="heading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontSora,
+              }}
+            >
+              +50k
+            </h2>
+            <p
+              className="subheading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontPoppins,
+              }}
+            >
+              Customers
+            </p>
+          </Box>
+          <Box>
+            <h2
+              className="heading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontSora,
+              }}
+            >
+              +400k
+            </h2>
+            <p
+              className="subheading_box--feature"
+              style={{
+                fontFamily: theme.custom.fontFamily.fontPoppins,
+              }}
+            >
+              Review
+            </p>
+          </Box>
+        </Stack>
+      </Container>
+    </div>
   );
 };

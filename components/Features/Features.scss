@@ -24,3 +24,25 @@
   max-width: 222px;
   height: 42px;
 }
+
+.feature_wrapper {
+  margin-top: 59px;
+}
+
+// Box Divisores
+.heading_box--feature {
+  color: var(--White, #fff);
+  /* H2 */
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.subheading_box--feature {
+  color: var(--White, #fff);
+  /* Body 1 */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
