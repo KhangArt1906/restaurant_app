@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.order_wrapper {
+  margin-top: 120px;
+}
+
+//Orders Menu{
+.heading_offer--menu {
+  color: #1f2326;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.subheading_offer--menu {
+  color: #81879d;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.price_offer--menu {
+  color: #1663f9;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+//Btn
+.btn_order {
+  margin: 50px auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+}

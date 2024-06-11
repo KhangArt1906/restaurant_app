@@ -1,5 +1,5 @@
 import React from "react";
-import "./Features.scss";
+import "./Feature.scss";
 import BoxTitle from "../BoxTitle/BoxTitle";
 import { styled } from "@mui/material/styles";
 import theme from "../../theme";

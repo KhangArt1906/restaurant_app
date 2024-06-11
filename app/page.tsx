@@ -6,6 +6,7 @@ import theme from "../theme";
 import { Box } from "@mui/material";
 import "./page.scss";
 import { Feature } from "../components/Features/Feature";
+import { Orders } from "../components/Orders/Orders";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Box className="wrapper">
         <Header />
         <Feature />
+        <Orders />
         {/* Các phần khác của trang */}
       </Box>
     </ThemeProvider>

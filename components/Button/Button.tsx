@@ -1,19 +1,23 @@
+// Button.tsx
 "use client";
 
+import React from "react";
 import { Button } from "@mui/material";
+import { ArrowRight } from "@mui/icons-material"; // Import your icon here
 
 interface ButtonProps {
   onClick: () => void;
   className?: string;
   background?: string;
   backgroundColor?: string;
-  fontSize?: string;
+  fontSize?: number;
   fontFamily?: string;
   color?: string;
   borderRadius?: string;
   width?: string;
   height?: string;
   text?: string;
+  children?: React.ReactNode;
 }
 
 const CustomButton: React.FC<ButtonProps> = ({
@@ -28,6 +32,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   width,
   height,
   text,
+  children,
 }) => {
   const buttonStyle: React.CSSProperties = {
     display: "flex",
@@ -47,6 +52,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   return (
     <Button className={className} onClick={onClick} style={buttonStyle}>
       {text}
+      {children}
     </Button>
   );
 };

@@ -10,13 +10,17 @@ declare module "@mui/material/styles" {
     black: string;
     textTitle: string;
     blackGray: string;
+    bluePrimary: string;
     backgrounBtn: string;
+    backgroundOrder: string;
   }
   interface PaletteOptions {
     black?: string;
     textTitle?: string;
     blackGray?: string;
+    bluePrimary?: string;
     backgroundBtn?: string;
+    backgroundOrder?: string;
   }
 
   interface Theme {
@@ -26,6 +30,7 @@ declare module "@mui/material/styles" {
         xl: string;
       };
       fontSizes: {
+        fs_9: number;
         fs_12: number;
         fs_14: number;
         fs_16: number;
@@ -47,6 +52,7 @@ declare module "@mui/material/styles" {
         xl?: string;
       };
       fontSizes?: {
+        fs_9?: number;
         fs_12?: number;
         fs_14?: number;
         fs_16?: number;
@@ -75,10 +81,13 @@ const themeOptions: ThemeOptions = {
   },
   palette: {
     black: "#1F2326",
+    bluePrimary: "#1663F9",
     textTitle: "linear-gradient(90deg, #F961D8 36.52%, #1663F9 63.78%)",
     blackGray: "#404040",
     backgroundBtn:
       "linear-gradient(90deg, #B0B0B0 0%, #636363 8.85%, #C2C2C2 17.71%, #C2C2C2 75%, #EFEEEE 86.46%, #6C6C6C 100%)",
+    backgroundOrder:
+      "linear-gradient(90deg, #F2F4FF -3.3%, #FFE5EC 53.98%, #FFF4EA 114.06%);",
   },
   custom: {
     shadows: {
@@ -86,6 +95,7 @@ const themeOptions: ThemeOptions = {
       xl: "5px 5px 3px rgba(0, 0, 0, .25)",
     },
     fontSizes: {
+      fs_9: 9,
       fs_12: 12,
       fs_14: 14,
       fs_16: 16,

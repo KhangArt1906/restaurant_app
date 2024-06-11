@@ -7,7 +7,6 @@ import CustomButton from "../Button/Button";
 import "./Header.scss";
 import BoxTitle from "../BoxTitle/BoxTitle";
 import theme from "../../theme";
-import Container from "@mui/material/Container";
 
 // Set style for 2 buttons
 const useStyles = makeStyles({
@@ -71,7 +70,7 @@ export const Header = () => {
             width="120px"
             height="35px"
             borderRadius="30px"
-            fontSize="9px"
+            fontSize={theme.custom.fontSizes.fs_9}
             fontFamily={theme.custom.fontFamily.fontPoppins}
           />
         </Box>
