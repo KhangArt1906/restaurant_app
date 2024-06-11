@@ -11,6 +11,7 @@ declare module "@mui/material/styles" {
     textTitle: string;
     blackGray: string;
     bluePrimary: string;
+    descPrimary: string;
     backgrounBtn: string;
     backgroundOrder: string;
   }
@@ -19,6 +20,7 @@ declare module "@mui/material/styles" {
     textTitle?: string;
     blackGray?: string;
     bluePrimary?: string;
+    descPrimary?: string;
     backgroundBtn?: string;
     backgroundOrder?: string;
   }
@@ -42,6 +44,7 @@ declare module "@mui/material/styles" {
       fontFamily: {
         fontPoppins: string;
         fontSora: string;
+        fontInter: string;
       };
     };
   }
@@ -64,6 +67,7 @@ declare module "@mui/material/styles" {
       fontFamily: {
         fontPoppins?: string;
         fontSora?: string;
+        fontInter?: string;
       };
     };
   }
@@ -82,6 +86,7 @@ const themeOptions: ThemeOptions = {
   palette: {
     black: "#1F2326",
     bluePrimary: "#1663F9",
+    descPrimary: "#81879D",
     textTitle: "linear-gradient(90deg, #F961D8 36.52%, #1663F9 63.78%)",
     blackGray: "#404040",
     backgroundBtn:
@@ -107,6 +112,7 @@ const themeOptions: ThemeOptions = {
     fontFamily: {
       fontPoppins: "Poppins, sans-serif",
       fontSora: "Sora, sans-serif",
+      fontInter: "Inter, sans-serif",
     },
   },
 };
