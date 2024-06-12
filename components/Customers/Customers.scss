@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.customer_wrapper {
+  padding-top: 120px;
+  height: 1000px;
+}
+
+.heading_title--customer {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.feature_title--customer {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.customer_name {
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.customer_job {
+  color: #9d9296;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.customer_opinion {
+  width: 451px;
+  color: #1e1e1e;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
